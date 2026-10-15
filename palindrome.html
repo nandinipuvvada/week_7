@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palindrome</title>
+</head>
+<body>
+    <script>
+        let a = 2442;
+        let temp = a;
+        let sum = 0;
+
+        while (temp > 0) {
+            let rem = temp % 10;
+            sum = (sum * 10) + rem;
+            temp = Math.floor(temp / 10); 
+        }
+
+        if (a == sum){
+            document.write(a + "is a palindrome.");
+        } else {
+            document.write(a + "is not a palindrome.");
+        }
+    </script>
+</body>
+</html>
